@@ -1,0 +1,41 @@
+@font-face {
+font-family: 'HMi';
+src: url('../fonts/HM.ttf') format('truetype');
+font-weight: normal;
+font-style: normal;
+}
+body{
+	 background-color: #000000;
+   padding: 0px;
+   margin: 0px;
+ }
+
+#gradient
+{
+  position: fixed;
+  width: 100%;
+  height: 200px;
+  padding: 0px;
+  margin: 0px;
+}
+/*#button{
+  width: 600px;
+  height: 600px;
+  right:0; 
+  top:0; 
+  margin: 10px}
+  ------------------
+  text-shadow: -10px 10px 0px #00e6e6,
+                 -20px 20px 0px #01cccc,
+                 -30px 30px 0px #00bdbd;*/
+#text{
+  text-align: center;
+  font-size: 100px;
+  letter-spacing: 10px;
+  font-family: "HMi";
+  z-index: 1;
+  text-shadow:   -1px 1px 0px yellow,
+                 -2px 2px 0px yellowgreen,
+                 -3px 3px 0px greenyellow,
+                 -4px 4px 0px red;
+}
