@@ -4,6 +4,10 @@ src: url('../fonts/Dos.ttf') format('truetype');
 font-weight: normal;
 font-style: normal;
 }
+/*
+    font-weight: normal;
+    font-style: normal;
+*/
 *{
   margin: 0;
 }
@@ -29,7 +33,7 @@ body{
   position: absolute;
   border-radius: 4px;
   cursor: pointer;
-  background: url(../button.png) no-repeat;
+  background: url(../buttonUp.png) no-repeat;
   border: none;
   right: 0;
   top: 0;
@@ -54,7 +58,8 @@ body{
   left: 0;
   z-index: 3;
 }*/
-#gradient
+/*-----GRANIENT------*/
+/*#gradient
 {
   position: absolute;
   width: 100%;
@@ -62,11 +67,12 @@ body{
   padding: 0px;
   margin: 0px;
   z-index: 1;
-}
+}*/
 a{
-  padding: 10px;
+  padding: 0px;
+  align-content: center;
   text-decoration: none;
-  /*margin: 0px;*/
+  margin: 10px;
   font-size: 5vh;
   font-family: "Dos";
   color: gold;

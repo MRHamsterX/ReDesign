@@ -2,15 +2,23 @@ var r = 0;
 var g = 0; 
 var b = 0;
 //document.getElementById('#gradient').style.height = "50px";
-//http://api.vk.com/method/wall.get?v=5.7&count=1&offset=1&domain=lentoru
+//http://api.vk.com/method/wall.get?v=5.7&count=1&offset=1&domain=lentoru 
+    function rotate() {
+        
+        $("button").css({ '-webkit-transform': 'rotate(90deg)'});  
+        $("button").css({ '-moz-transform': 'rotate(90deg)'}); 
+	}
 jQuery( document ).ready(function( $ ) {
+
     $("#button").click(function(){
+		rotate();
+		/*
         if($("#gradient").is(':visible')){
             //alert($("#gradient").height());
             $("#gradient").animate({height: "hide"}, 1000);
         }else{
             $("#gradient").animate({height: "show"}, 2000);
-        }
+        }*/
     });
 });
 /*function setColor(){
@@ -20,14 +28,14 @@ b = 255;
 
 document.getElementById("a").style.color = "rgb("+r+","+g+","+b+")";
 }
-setColor();*/
+setColor();
 $.ajax({  
   url: 'http://api.vk.com/method/groups.getById?gid=27541941&fields=members_count',  
   dataType: "jsonp",  
   success:function(e){ 
 $('#vkontakte_count').html(e.response[0].members_count) 
 }  
-});
+});*/
 /*{
 	"response": {
 		"count": 610,
